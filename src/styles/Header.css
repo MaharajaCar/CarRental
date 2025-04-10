@@ -1,0 +1,49 @@
+/* Navbar */
+
+.nav-links {
+    justify-content: space-between;
+    background: #F7ECD9;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    height: 8vw;
+    display: flex;
+}
+
+.navbar-buttons{
+    display: flex;
+    gap: 2rem;
+    margin-left: 2rem;
+}
+
+.navbar-buttons a {
+    text-decoration: none;
+    color: #6A4F32;
+    font-weight: 500;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.navbar-buttons a:hover {
+    color: #8C5D42;
+}
+
+.navbar-book-btn {
+    height: auto;
+    width: 10vw;
+    margin-right: 1rem;
+    align-self: center;
+}
+
+/* Mobile Menu */
+.menu-icon {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #6A4F32;
+}

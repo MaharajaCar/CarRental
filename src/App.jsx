@@ -1,13 +1,16 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import AllRoutes from "./routes/AllRoutes.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <AllRoutes />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          {/* <Route path="*" element={<Home />} /> */}
+        </Routes>
       </BrowserRouter>
       {/* <footer className="footer">
         <p>&copy; 2023 Car Rental. All rights reserved.</p>
@@ -19,8 +22,8 @@ function App() {
           <li><a href="#">LinkedIn</a></li>
         </ul>
       </footer> */}
-      </div>
+    </div>
   );
 }
 
-export default App
+export default App;

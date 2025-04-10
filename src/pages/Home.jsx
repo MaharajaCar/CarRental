@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Home.css";
 import carImage from "../assets/car.png"; // Replace with your actual image path
-import { FaBars, FaTimes, FaHome, FaInfoCircle, FaCar, FaPhone } from "react-icons/fa";
+import Header from "../components/Header"; // Import the Header component
 
 const Home = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -9,21 +9,7 @@ const Home = () => {
     return (
         <div className="home-container">
             {/* Navbar */}
-            <nav className="navbar">
-                <h1 className="logo">Maharaja Car Rental Services</h1>
-
-                <ul className={menuOpen ? "nav-links mobile-menu" : "nav-links"}>
-                    <li><a href="#"><FaHome /> Home</a></li>
-                    <li><a href="#"><FaInfoCircle /> About</a></li>
-                    <li><a href="#"><FaCar /> Vehicles</a></li>
-                    <li><a href="#"><FaPhone /> Contact</a></li>
-                </ul>
-
-                {/* Mobile Menu Icon */}
-                <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
-                    {menuOpen ? <FaTimes /> : <FaBars />}
-                </div>
-            </nav>
+            <Header />
 
             {/* Upper Half */}
             <div className="hero">
