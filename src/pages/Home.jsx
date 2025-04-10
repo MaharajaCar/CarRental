@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../styles/Home.css";
 import carImage from "../assets/car.png"; // Replace with your actual image path
 import Header from "../components/Header"; // Import the Header component
+import AboutUs from "../components/AboutUs"; // Import the AboutUs component
 
 const Home = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -32,6 +33,9 @@ const Home = () => {
                     <img src={carImage} alt="Luxury Car" />
                 </div>
             </div>
+
+            {/*About Us Section*/}
+            <AboutUs />
         </div>
     );
 };
