@@ -12,23 +12,25 @@ import "../styles/Header.css";
 const Header = () => {
   let menuOpen;
   return (
-      <nav className={menuOpen ? "nav-links mobile-menu" : "nav-links"}>
-        <div className="navbar-buttons">
-          <a href="#">
-            <FaHome /> Home
-          </a>
-          <a href="#">
-            <FaInfoCircle /> About
-          </a>
-          <a href="#">
-            <FaCar /> Vehicles
-          </a>
-          <a href="#">
-            <FaPhone /> Contact
-          </a>
-        </div>
+    <div className={menuOpen ? "nav-links mobile-menu" : "nav-links"}>
+      <div className="navbar-buttons">
+        <a href="#">
+          <FaHome /> Home
+        </a>
+        <a href="#">
+          <FaInfoCircle /> About
+        </a>
+        <a href="#">
+          <FaCar /> Vehicles
+        </a>
+        <a href="#">
+          <FaPhone /> Contact
+        </a>
+      </div>
+      <div className="navbar-book-btn-div">
         <button className="navbar-book-btn">Book Now</button>
-    </nav>
+      </div>
+    </div>
   );
 };
 {

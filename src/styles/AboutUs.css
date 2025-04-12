@@ -20,41 +20,46 @@
   align-self: flex-start;
 }
 
-.about-image {
-  /* width: 20%; */
-  max-width: 40%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 12px;
-}
-
 .description-box h2 {
-  font-size: 2.5rem;
+  font-size: 2.7vw;
   color: #5a2b0c;
   font-weight: bold;
 }
 
 .description-box .description1 {
   text-align: left;
-  font-size: 1.1rem;
+  font-size: 1.4vw;
   line-height: 1.9;
   color: #5c4033;
   margin-top: 15px;
 }
 
-.about-image{
-  width: 60%;
+.about-image-div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.about-image {
+  width: 35vw;
+  border-radius: 1rem;
+}
+
+.contact-box-div {
+  display: flex;
+  align-items: center;
+  gap: 15rem;
+  /* justify-content: space-between; */
+}
+
 .contact-box {
-  width: 60%;
-  align-self: flex-end;
+  /* width: 60%; */
+  /* align-self: flex-end; */
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-self: center;
+  justify-self: left;
+  gap: 1rem;
 }
 
 .contact-detail {
@@ -87,7 +92,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,7 +106,7 @@
   border-radius: 12px;
   width: 90%;
   max-width: 600px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .close-icon {
@@ -122,4 +127,26 @@
   padding: 0 5px;
   background-color: #f8d7da;
   color: darkred;
+}
+
+.close-button {
+  position: absolute;
+  right: -1rem;
+  top: -1rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 0;
+  background-color: #bb895d;
+  color: black;
+  font-weight: bold;
+}
+
+.close-button:hover {
+  background-color: #a37751;
 }
