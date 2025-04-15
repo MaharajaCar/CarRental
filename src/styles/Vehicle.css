@@ -1,9 +1,10 @@
 .vehicle-section {
-  padding: 2rem 1rem;
-  width: 90%;
+  padding-bottom: 3vw;
+  width: 100%;
   /* max-width: 1200px; */
   margin: 0 auto;
   text-align: center;
+  background-color: #c6bba5;
 }
 
 .vehicle-carousel-container {
@@ -41,8 +42,8 @@
 }
 
 .vehicle-card img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height:  150px;
   max-height: 150px;
   object-fit: contain;
   margin-bottom: 10px;
@@ -77,6 +78,6 @@
   background-color: unset;
 }
 
-@media (max-width) {
+/* @media (max-width) {
   
-}
+} */

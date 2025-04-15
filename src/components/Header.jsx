@@ -14,32 +14,19 @@ const Header = () => {
   return (
     <div className={menuOpen ? "nav-links mobile-menu" : "nav-links"}>
       <div className="navbar-buttons">
-        <a href="#">
+        <a href="#Home">
           <FaHome /> Home
         </a>
-        <a href="#">
-          <FaInfoCircle /> About
-        </a>
-        <a href="#">
+        <a href="#Vehicle">
           <FaCar /> Vehicles
         </a>
-        <a href="#">
-          <FaPhone /> Contact
+        <a href="#About">
+          <FaInfoCircle /> About
         </a>
       </div>
-      {/* <div className="navbar-book-btn-div"> */}
-        <button className="navbar-book-btn">Book Now</button>
-      {/* </div> */}
+        <button className="navbar-book-btn"><a style={{color: "white"}} href="tel:+918100035886">Call Now</a></button>
     </div>
   );
 };
-{
-  /* Mobile Menu Icon */
-}
-{
-  /* <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
-  {menuOpen ? <FaTimes /> : <FaBars />}
-</div> */
-}
 
 export default Header;

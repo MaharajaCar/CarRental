@@ -5,12 +5,15 @@
 .home-container {
   width: 100%;
   min-height: 100vh;
-  display: block; /* Changed from block to flex */
+  display: block; 
   flex-direction: column;
+  position: absolute;
+  top: 6vw;
 }
 
 .home-container .home-content-div {
   display: flex;
+  scroll-margin-top: 8vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
