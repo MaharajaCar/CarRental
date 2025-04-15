@@ -27,9 +27,9 @@ const Header = () => {
           <FaPhone /> Contact
         </a>
       </div>
-      <div className="navbar-book-btn-div">
+      {/* <div className="navbar-book-btn-div"> */}
         <button className="navbar-book-btn">Book Now</button>
-      </div>
+      {/* </div> */}
     </div>
   );
 };

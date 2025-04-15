@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "../styles/AboutUs.css";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import about from "../assets/aboutus.png";
-// import {Button} from '@mui/material';
 
 const AboutUs = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -42,14 +41,14 @@ const AboutUs = () => {
             >
               <span style={{ display: "flex", gap: "0.5vw" }}>
                 <FaPhoneAlt style={{ alignSelf: "center" }} />
-                <span>
+                <span style={{fontSize: "1.2vw"}}>
                   Call Us:
                   <a href="tel:+918100035886">+91 81000 35886</a>
                 </span>
               </span>
               <span style={{ display: "flex", gap: "0.5vw" }}>
                 <FaEnvelope style={{ alignSelf: "center" }} />
-                <span>
+                <span style={{fontSize: "1.2vw"}}>
                   Email:
                   <a href="mailto:info@maharajacars.in">info@maharajacars.in</a>
                 </span>
@@ -58,7 +57,6 @@ const AboutUs = () => {
             <button
               style={{
                 cursor: "pointer",
-                // textDecoration: "underline",
                 display: "flex",
                 gap: "1vw",
               }}
@@ -80,9 +78,9 @@ const AboutUs = () => {
 
               <iframe
                 title="Location Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.878751319235!2d88.3664009!3d22.546214300000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02770042cd2301%3A0x698e6c4d9f4693dc!2sMaharaja%20Car%20Rental%20Service!5e0!3m2!1sen!2sin!4v1744280921514!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.878751319235!2d88.3664009!3d22.546214300000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02770042cd2301%3A0x698e6c4d9f4693dc!2sMaharaja%20Car%20Rental%20Service!5e0!3m2!1sen!2sin!4v1744710928783!5m2!1sen!2sin"
                 width="100%"
-                height="300"
+                height="400"
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"

@@ -3,43 +3,40 @@
     display: flex;
     justify-content: space-between;
     background: #e7ccab;
-    padding: 2rem;
+    padding: 2vw;
     height: 4vw;
 }
 
 .navbar-buttons {
     display: flex;
-    gap: 4rem;
-    margin-left: 3rem;
+    gap: 4vw;
+    margin-left: 3vw;
 }
 
 .navbar-buttons a {
     text-decoration: none;
     color: #6A4F32;
-    font-size: 1.3vw;
+    font-size: 1.4vw;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1vw;
 }
 
 .navbar-buttons a:hover {
     color: #8C5D42;
 }
 
-.navbar-book-btn-div {
-    height: auto;
-    align-content: center;
-}
-
 .navbar-book-btn {
-    width: 8vw;
+    /* width: 8vw;
+    height: auto; */
+    font-size: 1.4vw;
     /* margin-right: 10rem; */
 }
 
 /* Mobile Menu */
 .menu-icon {
     display: none;
-    font-size: 1.8rem;
+    font-size: 1.8vw;
     cursor: pointer;
     color: #6A4F32;
 }

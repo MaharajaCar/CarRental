@@ -4,18 +4,24 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
-import { FaArrowLeft, FaArrowRight, FaUsers, FaRupeeSign } from "react-icons/fa";
+import {
+  FaArrowLeft,
+  FaArrowRight,
+  FaUsers,
+  FaRupeeSign,
+} from "react-icons/fa";
+
+import { useTheme, useMediaQuery } from "@mui/material";
 
 import "../styles/Vehicle.css";
 import innova from "../assets/innova.png";
 import ertiga from "../assets/ertiga.png";
 import baleno from "../assets/baleno.png";
-import fortuner from "../assets/fortuner.png"; // Replace with actual image path if available
-import citynew from "../assets/citynew.png"; // Replace with actual image path if available
-import crysta from "../assets/crysta.png"; // Replace with actual image path if available
-import xuv500 from "../assets/xuv500.png"; // Replace with actual image path if available
-import many from "../assets/many.png"; // Replace with actual image path if available
-
+import fortuner from "../assets/fortuner.png"; //
+import citynew from "../assets/citynew.png";
+import crysta from "../assets/crysta.png";
+import xuv500 from "../assets/xuv500.png";
+import many from "../assets/many.png";
 
 const vehicles = [
   {
@@ -84,13 +90,25 @@ const vehicles = [
   },
 ];
 
-
 const Vehicle = () => {
+  const theme = useTheme();
+  const mobileView = useMediaQuery(theme.breakpoints.down(900));
+  const TabView = useMediaQuery(theme.breakpoints.down(1100));
   return (
     <div className="vehicle-section">
-      <h2>Our Range of Vehicles</h2>
+      <div
+        style={{
+          fontSize: "2.5vw",
+          fontWeight: "bold",
+          margin: "10px 0 10px 0px",
+        }}
+      >
+        Our Range of Vehicles
+      </div>
       <div className="vehicle-carousel-container">
-        <button className="swiper-button-prev custom-arrow"><FaArrowLeft /></button>
+        <button className="swiper-button-prev custom-arrow arrow-left">
+          <FaArrowLeft />
+        </button>
 
         <Swiper
           modules={[Navigation]}
@@ -101,24 +119,42 @@ const Vehicle = () => {
           spaceBetween={20}
           slidesPerView={1}
           breakpoints={{
-            700: { slidesPerView: 3 },
+            700: { slidesPerView: mobileView ? 2 : TabView ? 3 : 4 },
           }}
           loop={true}
         >
           {vehicles.map((vehicle, index) => (
             <SwiperSlide key={index}>
               <div className={vehicle.className}>
-                <img src={vehicle.image} alt={vehicle.name} />
-                <h3>{vehicle.name}</h3>
-                <p><FaUsers /> Seats: {vehicle.seats}</p>
-                <p><FaRupeeSign /> Rate: {vehicle.rate}</p>
+                <img
+                  src={vehicle.image}
+                  width="100%"
+                  height="auto"
+                  alt={vehicle.name}
+                />
+                <div
+                  style={{
+                    fontSize: "1.6vw",
+                    fontWeight: "bold",
+                    margin: "5px 0px 15px 0px",
+                  }}
+                >
+                  {vehicle.name}
+                </div>
+                <div style={{ marginBottom: "10px", fontSize: "1.5vw" }}>
+                  <FaUsers /> Seats: {vehicle.seats}
+                  <br />
+                  <FaRupeeSign /> Rate: {vehicle.rate}
+                </div>
                 <div className="hover-desc">{vehicle.description}</div>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
 
-        <button className="swiper-button-next custom-arrow"><FaArrowRight /></button>
+        <button className="swiper-button-next custom-arrow arrow-right">
+          <FaArrowRight />
+        </button>
       </div>
     </div>
   );

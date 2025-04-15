@@ -12,7 +12,8 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  width: 90%;
+  justify-self: center;
+  width: 100%;
   box-sizing: border-box;
   padding: 0 10px;
 }
@@ -26,11 +27,11 @@
   padding: 1rem;
   border-radius: 10px;
   text-align: center;
-  height: 100%;
+  height: 30vw;
   background-color: #f2dfae;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   transition: transform 0.3s;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
@@ -48,64 +49,34 @@
 }
 
 .hover-desc {
-  margin-top: 10px;
-  font-size: 0.9rem;
+  font-size: 1.4vw;
   color: #555;
 }
 
 .custom-arrow {
   background: none;
   border: none;
-  font-size: 2rem;
+  font-size: 2vw;
   color: #444;
   z-index: 10;
   cursor: pointer;
-  padding: 0 0.5rem;
+  padding: 0 0.5rem;  
+  position: relative;
+  top: 10px;
 }
 
-@media (max-width: 1024px) {
-  .vehicle-card img {
-    max-height: 130px;
-  }
-
-  .custom-arrow {
-    font-size: 1.8rem;
-  }
+.arrow-left{
+  left: 40px;
 }
 
-@media (max-width: 768px) {
-  .vehicle-card {
-    padding: 0.75rem;
-  }
-
-  .vehicle-card img {
-    max-height: 120px;
-  }
-
-  .hover-desc {
-    font-size: 0.85rem;
-  }
-
-  .custom-arrow {
-    font-size: 1.6rem;
-  }
+.arrow-right{
+  right: 40px;
 }
 
-@media (max-width: 480px) {
-  .vehicle-section {
-    padding: 1.5rem 0.5rem;
-  }
+.custom-arrow:hover {
+  background-color: unset;
+}
 
-  .vehicle-card img {
-    max-height: 100px;
-  }
-
-  .hover-desc {
-    font-size: 0.8rem;
-  }
-
-  .custom-arrow {
-    padding: 0 0.3rem;
-    font-size: 1.5rem;
-  }
+@media (max-width) {
+  
 }
