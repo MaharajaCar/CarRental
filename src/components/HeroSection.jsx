@@ -10,9 +10,9 @@ const HeroSection = () => {
           MAHARAJA <br />
           CAR RENTAL
         </div>
-        <div className="hero-book-btn-div">
+        {/* <div className="hero-book-btn-div"> */}
           <button className="hero-book-btn"><a style={{color:"white"}} href="tel:+918100035886">Call Now</a></button>
-        </div>
+        {/* </div> */}
       </div>
       <img src={car} alt="Car" className="car-image" />
     </div>

@@ -2,36 +2,81 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 20px;
+  padding: 2vw 2vw;
   background-color: #f7ecd9;
   font-family: 'Segoe UI', sans-serif;
-  gap: 40px;
+  gap: 3vw;
 }
 
 .top-section {
-  display: flex;
+  display: block;
   flex-direction: row;
   width: 100%;
-  gap: 20px;
+  gap: 2vw;
+}
+
+.top-section h2 {
+  font-size: 2.7vw;
+  color: #5a2b0c;
+  font-weight: bold;
+  text-align: center;
+}
+
+.about-us-content-div{
+  display: flex;
+  justify-content: space-between;
 }
 
 .description-box {
   width: 60%;
   align-self: flex-start;
+  text-align: left;
 }
 
-.description-box h2 {
-  font-size: 2.7vw;
-  color: #5a2b0c;
-  font-weight: bold;
-}
-
-.description-box .description1 {
+.description-box .description {
   text-align: left;
   font-size: 1.4vw;
   line-height: 1.9;
   color: #5c4033;
-  margin-top: 15px;
+  margin-top: 1vw;
+}
+
+.contact-info{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2vw 0 2vw;
+  align-items: center;
+
+}
+
+.contact-details-div{
+    display: block;
+    gap: 0.5vw;
+    justify-content: space-between;
+}
+
+.contact-details{
+  display: flex;
+  gap:0.5vw;
+  align-items: center;
+}
+
+.contact-icon{
+  align-self: center;
+  width: 2vw;
+}
+
+.contact-text{
+  font-size: 1.3vw;
+}
+
+.contact-location-btn{
+  cursor: pointer;
+  gap: 1vw;
+  display: flex;
+  font-size: 1.3vw;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-image-div {
@@ -42,45 +87,7 @@
 
 .about-image {
   width: 35vw;
-  border-radius: 1rem;
-}
-
-.contact-box-div {
-  display: flex;
-  align-items: center;
-  gap: 15rem;
-}
-
-.contact-box {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  justify-self: left;
-  gap: 1rem;
-}
-
-.contact-detail {
-  font-size: 1.1rem;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #5c4033;
-}
-
-.contact-detail a {
-  font-weight: bold;
-  color: #3e260f;
-  text-decoration: none;
-}
-
-.contact-detail.map-launch button {
-  background-color: #d49c6a;
-  color: white;
-  padding: 10px 20px;
-  font-size: 1rem;
-  border: none;
-  cursor: pointer;
-  border-radius: 6px;
+  border-radius: 2vw;
 }
 
 .modal-overlay {
@@ -99,51 +106,78 @@
 .modal-content {
   position: relative;
   background: white;
-  padding: 20px;
-  border-radius: 12px;
+  padding: 2vw;
+  border-radius: 1vw;
   width: 90%;
-  max-width: 600px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  max-width: 50vw;
+  /* max-height: 50vw; */
+  box-shadow: 0 0.5vw 1.5vw rgba(0, 0, 0, 0.3);
 }
 
-.close-icon {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: red;
-  cursor: pointer;
-}
-
-.close-icon:hover {
-  /* all: unset; */
-  cursor: pointer;
-  border-radius: 50%;
-  padding: 0 5px;
-  background-color: #f8d7da;
-  color: darkred;
+.model-image {
+  width: 100%;
+  height: auto;
+  border-radius: 1vw;
+  border: 0;
+  height: 30vw;
 }
 
 .close-button {
   position: absolute;
-  right: -1rem;
-  top: -1rem;
-  font-size: 1.5rem;
+  right: -1vw;
+  top: -1vw;
+  font-size: 1.6vw;
+  font-weight: bold;
   border-radius: 50%;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.5vw;
+  height: 2.5vw;
   text-align: center;
-  justify-content: center;
-  align-content: center;
   align-items: center;
   padding: 0;
   background-color: #bb895d;
   color: black;
-  font-weight: bold;
 }
 
 .close-button:hover {
   background-color: #a37751;
+}
+
+
+@media (max-width: 950px){
+  .top-section h2 {
+    font-size: 3.5vw;
+  }
+
+  .description-box .description {
+    font-size: 1.8vw;
+  }
+
+  .contact-text{
+    font-size: 1.7vw;
+  }
+
+  .contact-location-btn{
+    font-size: 1.7vw;
+  }
+
+  .model-image {
+    height: 50vw;
+  }
+}
+
+@media (max-width: 650px){
+
+  .top-section h2 {
+    font-size: 4vw;
+  }
+
+  .description-box .description{
+    font-size: 2.2vw;
+  }
+  
+  .contact-text{
+    font-size: 2.1vw;
+  }
+
+
 }

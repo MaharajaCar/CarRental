@@ -1,5 +1,5 @@
 .hero-section-background {
-  height: 35vw;
+  height: 38vw;
   width: 100%;
   position: relative;
   background-image: linear-gradient(0deg, #c6bba5 30%, #f5eedc 10.5%);
@@ -15,10 +15,13 @@
   font-size: 5vw;
   line-height: 1.2;
   font-weight: bold;
+  text-align: left;
+  align-items: start;
 }
 
-.hero-book-btn-div{
+.hero-book-btn{
   margin-top: 1vw;
+  padding: 1.2vw;
   /* padding: 2vw; */
 }
 
@@ -27,4 +30,18 @@
   bottom: -6vw;
   right: 3vw;
   width: 45vw;
+}
+
+@media (max-width: 650px){
+
+  .hero-section-background {
+    height: 42vw;
+  }
+
+  .hero-heading{
+    font-size: 6.5vw;
+  }
+  .hero-book-btn{
+      font-size: 1.8vw;
+  }
 }

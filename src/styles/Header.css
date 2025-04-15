@@ -31,57 +31,31 @@
 }
 
 .navbar-book-btn {
-    /* width: 8vw;
-    height: auto; */
     font-size: 1.4vw;
-    /* margin-right: 10rem; */
+    padding: 0 2vw 0 2vw;
 }
 
-/* Mobile Menu */
-.menu-icon {
-    display: none;
-    font-size: 1.8vw;
-    cursor: pointer;
-    color: #6A4F32;
+@media (max-width: 950px){
+    .navbar-buttons a,
+    .navbar-book-btn{
+        font-size: 1.6vw;
+    }
 }
 
-
-/* Responsive Design */
-@media (max-width: 100px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background: #F7ECD9;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 200px;
-        box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.1);
-        padding: 1rem;
+@media (max-width: 780px) {
+    .navbar-buttons a{
+        font-size: 1.8vw;
     }
-
-    .nav-links.mobile-menu {
-        display: flex;
+    .navbar-book-btn{
+        font-size: 1.7vw;
     }
+}
 
-    .menu-icon {
-        display: block;
+@media (max-width: 650px) {
+    .navbar-buttons a{
+        font-size: 2.2vw;
     }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .car-info {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .description {
-        max-width: 100%;
-    }
-
-    .car-image img {
-        max-width: 250px;
+    .navbar-book-btn{
+        font-size: 1.8vw;
     }
 }

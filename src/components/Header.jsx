@@ -1,18 +1,14 @@
 import React from "react";
 import {
-  FaBars,
-  FaTimes,
   FaHome,
   FaInfoCircle,
   FaCar,
-  FaPhone,
 } from "react-icons/fa";
 import "../styles/Header.css";
 
 const Header = () => {
-  let menuOpen;
   return (
-    <div className={menuOpen ? "nav-links mobile-menu" : "nav-links"}>
+    <div className="nav-links">
       <div className="navbar-buttons">
         <a href="#Home">
           <FaHome /> Home
