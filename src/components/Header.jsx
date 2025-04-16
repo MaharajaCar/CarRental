@@ -5,11 +5,15 @@ import {
   FaCar,
 } from "react-icons/fa";
 import "../styles/Header.css";
+import logo from "../assets/logo.png";
 
 const Header = () => {
   return (
     <div className="nav-links">
       <div className="navbar-buttons">
+      <div >
+        <img src={logo} alt="Logo" className="navbar-logo" />
+        </div>
         <a href="#Home">
           <FaHome /> Home
         </a>
