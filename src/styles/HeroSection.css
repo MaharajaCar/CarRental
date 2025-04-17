@@ -5,44 +5,108 @@
   background-image: linear-gradient(0deg, #c6bba5 30%, #f5eedc 10.5%);
 }
 
-.hero-section{
+.hero-section {
   display: block;
-  justify-items: left;
   padding: 4vw;
+  justify-content: left;
+
 }
 
-.hero-heading{
+.hero-heading {
   font-family: 'Cinzel', serif;
   font-size: 5vw;
   line-height: 1.2;
   font-weight: 350;
-  text-align: center;
-  align-items: start;
+  text-align: left;
 }
 
-.hero-book-btn{
+.hero-book-btn-div{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.hero-book-btn {
   margin-top: 1vw;
   padding: 1.2vw;
-  /* padding: 2vw; */
+  justify-self: left;
+  justify-content: left;
 }
 
-.car-image{
+.car-image {
   position: absolute;
   bottom: -6vw;
   right: 3vw;
   width: 45vw;
 }
 
-@media (max-width: 650px){
-
+@media (max-width: 850px) {
   .hero-section-background {
-    height: 42vw;
+    height: 48vw;
   }
 
-  .hero-heading{
-    font-size: 6.5vw;
+  .hero-heading {
+    font-size: 7vw;
   }
-  .hero-book-btn{
-      font-size: 1.8vw;
+
+  .car-image{
+    width: 60vw;
+    bottom: -10vw;
+  }
+
+  .hero-book-btn {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero-section-background {
+    height: 65vw;
+  }
+
+  .hero-section {
+    margin-top: 2vw;
+  }
+
+  .hero-heading {
+    font-size: 8vw;
+  }
+
+  .car-image{
+    width: 70vw;
+    bottom: -15vw;
+    right: 1vw;
+  }
+
+  .hero-book-btn {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .hero-section-background {
+    height: 70vw;
+  }
+
+  .hero-section {
+    margin-top: 2vw;
+  }
+
+  .hero-heading {
+    font-size: 10vw;
+  }
+
+  .car-image{
+    width: 80vw;
+    bottom: -22vw;
+  }
+
+  .hero-book-btn-div{
+    padding: 1vw;
+  }
+
+  .hero-book-btn {
+    font-size: 3.3vw;
+    padding: 1.6vw;
   }
 }

@@ -45,13 +45,13 @@
 @media (max-width: 950px){
     .navbar-buttons a,
     .navbar-book-btn{
-        font-size: 1.6vw;
+        font-size: 1.8vw;
     }
 }
 
 @media (max-width: 780px) {
     .navbar-buttons a{
-        font-size: 1.8vw;
+        font-size: 2vw;
     }
     .navbar-book-btn{
         font-size: 1.7vw;
@@ -60,9 +60,9 @@
 
 @media (max-width: 650px) {
     .navbar-buttons a{
-        font-size: 2.2vw;
+        font-size: 2.6vw;
     }
     .navbar-book-btn{
-        font-size: 1.8vw;
+        font-size: 2.3vw;
     }
 }

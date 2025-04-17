@@ -17,7 +17,7 @@ const AboutUs = () => {
                 Looking for a premium ride to elevate your next trip? Whether
                 you're dreaming of a stress-free family vacation, organizing a
                 wedding with a royal entrance, or craving a spontaneous weekend
-                road trip to the coast—
+                road trip to the coast — {" "}
                 <strong>Maharaja Car Rental Services</strong> is your go-to
                 travel companion.
                 <br />

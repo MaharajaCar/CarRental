@@ -22,13 +22,13 @@
   text-align: center;
 }
 
-.about-us-content-div{
+.about-us-content-div {
   display: flex;
   justify-content: space-between;
+  gap: 1vw;
 }
 
 .description-box {
-  width: 60%;
   align-self: flex-start;
   text-align: left;
 }
@@ -41,7 +41,7 @@
   margin-top: 1vw;
 }
 
-.contact-info{
+.contact-info {
   display: flex;
   justify-content: space-between;
   padding: 0 2vw 0 2vw;
@@ -49,28 +49,28 @@
 
 }
 
-.contact-details-div{
-    display: block;
-    gap: 0.5vw;
-    justify-content: space-between;
+.contact-details-div {
+  display: block;
+  gap: 0.5vw;
+  justify-content: space-between;
 }
 
-.contact-details{
+.contact-details {
   display: flex;
-  gap:0.5vw;
+  gap: 0.5vw;
   align-items: center;
 }
 
-.contact-icon{
+.contact-icon {
   align-self: center;
   width: 2vw;
 }
 
-.contact-text{
+.contact-text {
   font-size: 1.3vw;
 }
 
-.contact-location-btn{
+.contact-location-btn {
   cursor: pointer;
   gap: 1vw;
   display: flex;
@@ -127,11 +127,11 @@
   right: -1vw;
   top: -1vw;
   font-size: 1.6vw;
-  font-weight: bold;
-  border-radius: 50%;
   width: 2.5vw;
   height: 2.5vw;
+  border-radius: 50%;
   text-align: center;
+  font-weight: bold;
   align-items: center;
   padding: 0;
   background-color: #bb895d;
@@ -143,7 +143,7 @@
 }
 
 
-@media (max-width: 950px){
+@media (max-width: 950px) {
   .top-section h2 {
     font-size: 3.5vw;
   }
@@ -152,32 +152,114 @@
     font-size: 1.8vw;
   }
 
-  .contact-text{
+  .contact-text {
     font-size: 1.7vw;
   }
-
-  .contact-location-btn{
+  
+  .contact-location-btn {
     font-size: 1.7vw;
   }
-
+  
   .model-image {
     height: 50vw;
   }
+  
+  .close-button{
+    font-size: 4vw;
+    width: 5vw;
+    height: 5vw;
+    right: -2vw;
+    top: -2vw;
+    text-align: center;
+  }
 }
 
-@media (max-width: 650px){
-
+@media (max-width: 650px) {
+  .close-button{
+    font-size: 6vw;
+    width: 8vw;
+    height: 8vw;
+    right: -3vw;
+    top: -3vw;
+  }
+  
   .top-section h2 {
     font-size: 4vw;
   }
 
-  .description-box .description{
+  .description-box .description {
     font-size: 2.2vw;
   }
-  
-  .contact-text{
+
+  .contact-text {
     font-size: 2.1vw;
   }
 
+  .contact-info {
+    display: block;
+  }
 
+  .contact-location-btn {
+    margin-top: 1vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .about-us-wrapper {
+    padding: 2vw 5vw;
+  }
+
+  .top-section h2 {
+    font-size: 7vw;
+  }
+  
+  .description-box {
+    padding: 2vw;
+    z-index: 1;
+    
+  }
+
+  .description-box .description {
+    font-size: 4vw;
+    line-height: 6vw;
+  }
+  
+  .about-us-content-div{
+    position: relative;
+  }
+  
+  .about-image-div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .about-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.13;
+    border-radius: 5vw;
+  }
+
+  .contact-details{
+    gap: 2vw;
+  }
+
+  .contact-icon{
+    width: 3.5vw;
+  }
+
+  .contact-location-btn .contact-icon{
+    height: 3vw;
+  }
+
+  .contact-text {
+    font-size: 4vw;
+  }
+
+  .contact-location-btn {
+    font-size: 2.5vw;
+  }
 }
