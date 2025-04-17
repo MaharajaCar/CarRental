@@ -17,10 +17,11 @@ import "../styles/Vehicle.css";
 import innova from "../assets/innova.png";
 import ertiga from "../assets/ertiga.png";
 import baleno from "../assets/baleno.png";
-import fortuner from "../assets/fortuner.png"; //
+import fortuner from "../assets/fortuner.png";
 import citynew from "../assets/citynew.png";
 import crysta from "../assets/crysta.png";
 import xuv500 from "../assets/xuv500.png";
+import traveller from "../assets/traveller.png";
 import many from "../assets/many.png";
 
 const vehicles = [
@@ -81,12 +82,20 @@ const vehicles = [
     className: "vehicle-card light",
   },
   {
+    name: "Tempo Traveller",
+    image: traveller,
+    seats: 26,
+    rate: "₹6000 (8hr/80km)",
+    description: "Spacious and comfortable, ideal for large groups and long journeys.",
+    className: "vehicle-card dark",
+  },  
+  {
     name: "And Many More",
     image: many, // Maybe use a generic or “plus” image
     seats: "-",
     rate: "Contact Us",
     description: "Explore full range by reaching out to us.",
-    className: "vehicle-card dark",
+    className: "vehicle-card light",
   },
 ];
 
@@ -134,14 +143,14 @@ const Vehicle = () => {
                 />
                 <div
                   style={{
-                    fontSize: "1.6vw",
+                    fontSize: "1.8vw",
                     fontWeight: "bold",
                     margin: "5px 0px 15px 0px",
                   }}
                 >
                   {vehicle.name}
                 </div>
-                <div style={{ marginBottom: "10px", fontSize: "1.5vw" }}>
+                <div style={{ marginBottom: "10px", fontSize: "1.6vw" }}>
                   <FaUsers /> Seats: {vehicle.seats}
                   <br />
                   <FaRupeeSign /> Rate: {vehicle.rate}

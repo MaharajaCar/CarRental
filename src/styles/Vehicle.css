@@ -16,7 +16,7 @@
   justify-self: center;
   width: 100%;
   box-sizing: border-box;
-  padding: 0 10px;
+  padding: 5px 10px;
 }
 
 .swiper {
@@ -25,14 +25,18 @@
 }
 
 .vehicle-card {
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: 4vw;
+  /* width: 80vw; */
   text-align: center;
-  height: 30vw;
+  height: 34vw;
   background-color: #f2dfae;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
+  font-size: 1.4vw;
   transition: transform 0.3s;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
@@ -43,8 +47,9 @@
 
 .vehicle-card img {
   width: auto;
-  height:  150px;
+  height:  18vw;
   max-height: 150px;
+  border-radius: 4vw;
   object-fit: contain;
   margin-bottom: 10px;
 }

@@ -12,10 +12,11 @@
 }
 
 .hero-heading{
+  font-family: 'Cinzel', serif;
   font-size: 5vw;
   line-height: 1.2;
-  font-weight: bold;
-  text-align: left;
+  font-weight: 350;
+  text-align: center;
   align-items: start;
 }
 

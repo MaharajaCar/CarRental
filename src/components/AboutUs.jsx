@@ -41,8 +41,8 @@ const AboutUs = () => {
                     <FaEnvelope className="contact-icon" />
                     <span className="contact-text">
                       Email:
-                      <a href="mailto:info@maharajacars.in">
-                        info@maharajacars.in
+                      <a href="mailto:maharajacarrental64@gmail.com">
+                         maharajacarrental64@gmail.com
                       </a>
                     </span>
                   </div>
