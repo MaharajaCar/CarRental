@@ -23,6 +23,7 @@ import crysta from "../assets/crysta.png";
 import xuv500 from "../assets/xuv500.png";
 import traveller from "../assets/traveller.png";
 import many from "../assets/many.png";
+import { RiHome4Line } from "react-icons/ri";
 
 const vehicles = [
   {
@@ -105,15 +106,9 @@ const Vehicle = () => {
   const TabView = useMediaQuery(theme.breakpoints.down(1100));
   return (
     <div className="vehicle-section">
-      <div
-        style={{
-          fontSize: "2.5vw",
-          fontWeight: "bold",
-          margin: "10px 0 10px 0px",
-        }}
-      >
+      <h2>
         Our Range of Vehicles
-      </div>
+      </h2>
       <div className="vehicle-carousel-container">
         <button className="swiper-button-prev custom-arrow arrow-left">
           <FaArrowLeft />
@@ -141,21 +136,15 @@ const Vehicle = () => {
                   height="auto"
                   alt={vehicle.name}
                 />
-                <div
-                  style={{
-                    fontSize: "1.8vw",
-                    fontWeight: "bold",
-                    margin: "5px 0px 15px 0px",
-                  }}
-                >
+                <h4>
                   {vehicle.name}
-                </div>
-                <div style={{ marginBottom: "10px", fontSize: "1.6vw" }}>
+                </h4>
+                <p>
                   <FaUsers /> Seats: {vehicle.seats}
                   <br />
                   <FaRupeeSign /> Rate: {vehicle.rate}
-                </div>
-                <div className="hover-desc">{vehicle.description}</div>
+                <br/>
+                {vehicle.description}</p>
               </div>
             </SwiperSlide>
           ))}

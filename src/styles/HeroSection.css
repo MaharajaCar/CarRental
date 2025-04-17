@@ -56,6 +56,7 @@
 
   .hero-book-btn {
     font-size: 2vw;
+    border-radius: 2vw;
   }
 }
 
@@ -80,6 +81,7 @@
 
   .hero-book-btn {
     font-size: 2.5vw;
+    border-radius: 3vw;
   }
 }
 
