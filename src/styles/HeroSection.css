@@ -31,6 +31,7 @@
   padding: 1.2vw;
   justify-self: left;
   justify-content: left;
+  border-radius: 2vw;
 }
 
 .car-image {
@@ -42,7 +43,7 @@
 
 @media (max-width: 850px) {
   .hero-section-background {
-    height: 48vw;
+    height: 58vw;
   }
 
   .hero-heading {
@@ -55,7 +56,7 @@
   }
 
   .hero-book-btn {
-    font-size: 2vw;
+    font-size: 2.5vw;
     border-radius: 2vw;
   }
 }
@@ -80,27 +81,28 @@
   }
 
   .hero-book-btn {
-    font-size: 2.5vw;
-    border-radius: 3vw;
+    font-size: 2.8vw;
+    border-radius: 2.8vw;
   }
 }
 
 @media (max-width: 450px) {
   .hero-section-background {
-    height: 70vw;
+    height: 85vw;
   }
-
+  
   .hero-section {
     margin-top: 2vw;
   }
-
+  
   .hero-heading {
     font-size: 10vw;
+    text-align: center;
+    
   }
-
   .car-image{
     width: 80vw;
-    bottom: -22vw;
+    bottom: -15vw;
   }
 
   .hero-book-btn-div{
@@ -108,7 +110,7 @@
   }
 
   .hero-book-btn {
-    font-size: 3.3vw;
+    font-size: 3.8vw;
     padding: 1.6vw;
   }
 }

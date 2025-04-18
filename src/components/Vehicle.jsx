@@ -23,7 +23,6 @@ import crysta from "../assets/crysta.png";
 import xuv500 from "../assets/xuv500.png";
 import traveller from "../assets/traveller.png";
 import many from "../assets/many.png";
-import { RiHome4Line } from "react-icons/ri";
 
 const vehicles = [
   {
@@ -87,9 +86,10 @@ const vehicles = [
     image: traveller,
     seats: 26,
     rate: "₹6000 (8hr/80km)",
-    description: "Spacious and comfortable, ideal for large groups and long journeys.",
+    description:
+      "Spacious and comfortable, ideal for large groups and long journeys.",
     className: "vehicle-card dark",
-  },  
+  },
   {
     name: "And Many More",
     image: many, // Maybe use a generic or “plus” image
@@ -102,57 +102,53 @@ const vehicles = [
 
 const Vehicle = () => {
   const theme = useTheme();
-  const mobileView = useMediaQuery(theme.breakpoints.down(900));
+  const mobileView = useMediaQuery(theme.breakpoints.down(650));
   const TabView = useMediaQuery(theme.breakpoints.down(1100));
   return (
     <div className="vehicle-section">
-      <h2>
-        Our Range of Vehicles
-      </h2>
-      <div className="vehicle-carousel-container">
-        <button className="swiper-button-prev custom-arrow arrow-left">
-          <FaArrowLeft />
-        </button>
+      <h2>Our Range of Vehicles</h2>
+      <div style={{display: "flex", justifyContent: "center"}}>
+        <div className="vehicle-carousel-container">
+          <button className="swiper-button-prev custom-arrow arrow-left">
+            <FaArrowLeft />
+          </button>
 
-        <Swiper
-          modules={[Navigation]}
-          navigation={{
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          }}
-          spaceBetween={20}
-          slidesPerView={1}
-          breakpoints={{
-            700: { slidesPerView: mobileView ? 2 : TabView ? 3 : 4 },
-          }}
-          loop={true}
-        >
-          {vehicles.map((vehicle, index) => (
-            <SwiperSlide key={index}>
-              <div className={vehicle.className}>
-                <img
-                  src={vehicle.image}
-                  width="100%"
-                  height="auto"
-                  alt={vehicle.name}
-                />
-                <h4>
-                  {vehicle.name}
-                </h4>
-                <p>
-                  <FaUsers /> Seats: {vehicle.seats}
-                  <br />
-                  <FaRupeeSign /> Rate: {vehicle.rate}
-                <br/>
-                {vehicle.description}</p>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+          <Swiper
+            modules={[Navigation]}
+            navigation={{
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            }}
+            spaceBetween={20}
+            slidesPerView={1}
+            breakpoints={{
+              500: { slidesPerView: mobileView ? 2 : TabView ? 3 : 4 },
+            }}
+            loop={true}
+          >
+            {vehicles.map((vehicle, index) => (
+              <SwiperSlide key={index}>
+                <div className={vehicle.className}>
+                  <div className="vehicle-card-img-div">
+                    <img src={vehicle.image} alt={vehicle.name} />
+                  </div>
+                  <h4>{vehicle.name}</h4>
+                  <p>
+                    <FaUsers /> Seats: {vehicle.seats}
+                    <br />
+                    <FaRupeeSign /> Rate: {vehicle.rate}
+                    <br />
+                    {vehicle.description}
+                  </p>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
 
-        <button className="swiper-button-next custom-arrow arrow-right">
-          <FaArrowRight />
-        </button>
+          <button className="swiper-button-next custom-arrow arrow-right">
+            <FaArrowRight />
+          </button>
+        </div>
       </div>
     </div>
   );
