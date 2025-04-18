@@ -1,7 +1,7 @@
 import React from "react";
 import { FaHome, FaInfoCircle, FaCar } from "react-icons/fa";
 import "../styles/Header.css";
-import logo from "../assets/logo2.png";
+import logo from "../assets/logo22.png";
 
 const Header = () => {
   return (
