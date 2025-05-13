@@ -136,8 +136,8 @@ const Vehicle = () => {
                   <p>
                     <FaUsers /> Seats: {vehicle.seats}
                     <br />
-                    <FaRupeeSign /> Rate: {vehicle.rate}
-                    <br />
+                    {/* <FaRupeeSign /> Rate: {vehicle.rate}
+                    <br /> */}
                     {vehicle.description}
                   </p>
                 </div>
